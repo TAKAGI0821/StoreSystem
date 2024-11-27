@@ -1,48 +1,145 @@
-# StoreSystem
-<!-- 1. GitHub usernameを変更 -->
-<div align="right">
-  <img src="https://komarev.com/ghpvc/?username=username" />
-</div>
+# 座席・予約管理システム
+## 概要
+飲食チェーン店でよく見かける、座席・予約管理システムを作りました！<br>
+※お店で使えるレベルではありません。<br>
+
+<table>
+  <tbody>
+    <tr>
+      <th scope="row"><b>背景</b></th>
+      <td>
+        ・アルバイトで、何も考えずに座席を決められるシステムにしたいと思ったから<br>
+        ・座席の掃除が終わったことをレジに伝えに行くのがめんどくさかったから<br>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row"><b>目的</b></th>
+      <td>
+        ・身近で不便に感じたことを解決する<br>
+        ・ソフトウェア開発の難しさを知る<br>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row"><b>目標</b></th>
+      <td>
+        ・席を提案してくれるようにする<br>
+        ・掃除が完了したことを簡単に知らせられるようにする<br>
+        ・既存の機能も実装する（座席状況の表示、予約、取り消し）<br>
+      </td>
+    </tr>
+    <tr>
+      <th scope="row"><b>開発人数</b></th>
+      <td>3人</td>
+    </tr>
+    <tr>
+      <th scope="row"><b>担当区分</b></th>
+      <td>
+        ・設計全般<br>
+        ・サーバ・クライアント通信<br>
+        ・外部のプログラミング<br>
+        ・結合のプログラミング<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+## 流れ
+### 全体像
+
+### デモ
+
+## 仕様説明
+
+## 開発環境・必要なライブラリ
+
+## 実行の仕方
+
+## 工夫点
+
+## できなかったこと・今後の展望
+
+## 注意事項
+
+## その他
 
 
-<!-- 2. プロフィールや連絡先を変更 -->
-## <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="28"> Hi there
 
-- 🧑‍💻 I'm a backend engineer.
-- 🌱 I’m currently learning go!
-- 📫 How to reach me: [Twitter - @username](https://twitter.com/username)
+
+## 流れ（デモ）
+<b>【コースの全体像】</b><br><br>
+
+
+## 機体
+<b>【機体の表側】</b><br>
+
+
+<br>
 <br>
 
+<b>【機体の裏側】</b><br>
 
-<!-- 3. 好きな技術スタックに変更 -->
-<!-- ライトモート：theme=light, ダークモート：theme=dark -->
-<!-- アイコンの選択肢一覧：https://arc.net/l/quote/zizyykfh -->
-## 🌱 Skills
-<img alt="my skills" src="https://skillicons.dev/icons?theme=dark&perline=7&i=html,css,js,ts,react,next,figma,python,fastapi,go,docker,terraform,aws,gcp" />
+
+<br>
 <br>
 
+<b>【工夫点】</b><br>
+アッカーマン機構というモノを採用することで、左タイヤと右タイヤの水平位置のずれを最小限に抑えている。
+また、これにより、タイヤによる前進方向の力の妨害を防ぐことに寄与している。<br>
+左側：は両輪を1つの軸でつないでいる。<br>
+右側：アッカーマン機構でタイヤをつけている。<br>
 
-<!-- 4. GitHub usernameを変更, 2箇所 -->
-<!-- ライトモート：theme=light, ダークモート：theme=vue-dark  -->
-## 🏃‍♀️ Activities
-<div align="left"> 
-  <img alt="Top Langs" height="170px" src="https://github-readme-stats.vercel.app/api?username=username&theme=vue-dark&layout=compact" />
-  <img alt="github stats" height="170px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=username&theme=vue-dark&layout=compact" />
-</div>
+![image](https://github.com/user-attachments/assets/1819edc2-696f-4b05-a084-6b1c9962bd97)
 
+## 回路
+<b>【簡易的な回路図】</b><br>
+![image](https://github.com/user-attachments/assets/63ba43ec-9fbd-433d-a468-c422b2764185)
 
-<!--
-This repository is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<br>
+<br>
 
-Here are some ideas to get you started:
+## プログラム
+流れとしては「フォトセンサでラインを走行」→「赤外線センサーとフォトセンサで箱を発見」→「箱を持っていなければ箱を拾う」→「フォトセンサでラインを走行」→「フォトセンサでアームロボットを検知し、箱を持っている場合、止まる」→「箱を放す」→同様のことを繰り返す。<br><br>
+フローチャート１の左側のフローがmainフローになっており、そこを起点にセンサーの読み取り、お菓子の取捨などの処理を行っている。
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<br>
 
+<b>【フローチャート1】</b><br>
+
+![image](https://github.com/user-attachments/assets/12a25cf1-e34b-46ff-839b-11eabb86d1c3)
+
+<br>
+
+<b>【フローチャート2】</b><br>
+
+![image](https://github.com/user-attachments/assets/d67c6a5d-b990-4f53-ace0-1f4ed3185123)
+
+<br>
+<br>
+
+<b>【工夫点】</b><br>
+<b>比例制御による走行：</b>下の図のように、ラインから少し車体がずれていた場合には、少しだけタイヤの向きを変え、逆にラインから大きく車体がずれた場合には、タイヤの向きを大きく変える制御を行っている。<br>
+
+![image](https://github.com/user-attachments/assets/c550e02f-8e0f-4060-ada9-91ca809e9f80)
+
+<br>
+<br>
+
+<b>特殊な前進方法による走行：</b>アクセルとブレーキを繰り返すような走行を行っている。これは、「早すぎて所定の位置に止まれない」「遅すぎてカーブを曲がり切れない」という2つの問題を解決するために、編み出した方法である。<br>
+
+<br>
+
+<b>箱を回収する際の工夫：</b>箱を回収する際には、なるべく箱の中のお菓子がバラバラにならないようにするために、サーボモータの角度変化を徐々に行うようにしている。<br>
+
+## その他
+開発環境：ArduinoIDE<br>
+作成者の人数：5名（ライントレースカー側3名、アームロボット側2名）<br>
+※今回の説明では、アームロボット側の説明は省いている。<br>
+私の担当部分：プログラム全体<br>
+
+## 注意事項
+このリポジトリは、企業向けに作成されたポートフォリオです。内容の無断転載、画像や動画の無断使用は固くお断りいたします。
+
+- **利用範囲**: このリポジトリは、URLを知っている方に公開されています。ただし、内容を許可なく第三者と共有したり、商用利用することは禁止されています。
+- **著作権**: このリポジトリ内のコード、画像、動画、その他のコンテンツの著作権は全て作成者に帰属します。
+
+よろしくお願いいたします。
